@@ -11,6 +11,7 @@
 :root {
     --bg-color: darkkhaki;
     --bg-win-color: lightgreen;
+    --bg-loose-color: rgb(255, 54, 54);
     --font: 'Roboto', sans-serif;
 
 }
@@ -27,7 +28,18 @@ body {
     gap: 1rem;
     min-height: 100vh;
     background-color: var(--bg-color);
-    /* background-color: var(--bg-win-color); */
+}
+
+.container.win {
+    background-color: var(--bg-win-color);
+}
+
+.container.loose {
+    background-color: var(--bg-loose-color);
+}
+
+.container.win .guessBtn {
+    cursor: not-allowed;
 }
 
 .container_about {
@@ -65,6 +77,7 @@ input,
     width: 100%;
     outline: none;
     padding: 8px 10px;
+    border: none;
     border-radius: 5px;
     font-size: 1rem;
     font-family: inherit;
@@ -81,14 +94,16 @@ input:focus {
     background-color: #fff;
 }
 
-.btn {
+.guessBtn {
     background-color: darkgoldenrod;
     cursor: pointer;
     color: #fff;
     border: none;
 }
 
-.btn:hover,
+
+
+.guessBtn:hover,
 .reset_btn:hover {
     filter: brightness(1.2);
     border: none;
@@ -99,9 +114,9 @@ input:focus {
 }
 
 .reset_btn {
-    background-color: rgb(255, 54, 54);
+    background-color: rgb(255, 0, 0);
     color: #fff;
-
+    cursor: pointer;
     width: 100%;
 }
 
@@ -113,7 +128,8 @@ input:focus {
     gap: 1rem;
 }
 
-.container_result .attempts,
-.high_score {
+.container_result #attempts,
+#highScore {
     text-transform: uppercase;
+    letter-spacing: 1px;
 }

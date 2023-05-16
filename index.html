@@ -28,17 +28,17 @@
         <div class="container_input">
           <input
             type="number"
-            id="input"
             placeholder="Enter a number"
             required
+            class="guess"
           />
-          <button id="btn" class="btn">Guess</button>
+          <button id="btn" class="btn guessBtn">Guess</button>
         </div>
 
         <div class="container_result">
-          <p id="result">Start Guessing.. 👀`</p>
-          <p id="attempts" class="attempts">Attempts: 0</p>
-          <p id="highScore" class="high_score">High Score: 20</p>
+          <p id="result">Start Guessing.. 👀</p>
+          <p id="attempts">Attempts: <span class="attempts"></span></p>
+          <p id="highScore">High Score: <span class="high_score"></span></p>
         </div>
 
         <div class="container_footer">
