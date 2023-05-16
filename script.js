@@ -18,9 +18,9 @@ let highScore = 0;
 attempts.textContent = attemptsRemaining;
 score.textContent = highScore;
 // Adding audios
-const clickAudio = new Audio("/click.wav");
-const winAudio = new Audio("/win.wav");
-const loseAudio = new Audio("/lose.wav");
+const clickAudio = new Audio("./click.wav");
+const winAudio = new Audio("./win.wav");
+const loseAudio = new Audio("./lose.wav");
 
 // Adding functionality on what should happen on a click!!
 guessBtn.addEventListener("click", () => {
