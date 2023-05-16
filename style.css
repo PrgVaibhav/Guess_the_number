@@ -28,7 +28,6 @@ body {
     min-height: 100vh;
     background-color: var(--bg-color);
     /* background-color: var(--bg-win-color); */
-
 }
 
 .container_about {
@@ -61,8 +60,6 @@ body {
     max-width: 400px;
 }
 
-.container_input input .btn {}
-
 input,
 .btn {
     width: 100%;
@@ -91,9 +88,21 @@ input:focus {
     border: none;
 }
 
-.btn:hover {
+.btn:hover,
+.reset_btn:hover {
     filter: brightness(1.2);
     border: none;
+}
+
+.container_footer {
+    max-width: 400px;
+}
+
+.reset_btn {
+    background-color: rgb(255, 54, 54);
+    color: #fff;
+
+    width: 100%;
 }
 
 .container_result {
@@ -102,4 +111,9 @@ input:focus {
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+}
+
+.container_result .attempts,
+.high_score {
+    text-transform: uppercase;
 }

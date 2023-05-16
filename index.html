@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/favicon.png"
+      type="
+        image/x-icon
+    "
+    />
     <title>Guess The Number</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -19,14 +26,23 @@
           </p>
         </div>
         <div class="container_input">
-          <input type="number" id="input" placeholder="Enter a number" />
+          <input
+            type="number"
+            id="input"
+            placeholder="Enter a number"
+            required
+          />
           <button id="btn" class="btn">Guess</button>
         </div>
 
         <div class="container_result">
           <p id="result">Start Guessing.. 👀`</p>
-          <p id="attempts">Attempts: 0</p>
+          <p id="attempts" class="attempts">Attempts: 0</p>
           <p id="highScore" class="high_score">High Score: 20</p>
+        </div>
+
+        <div class="container_footer">
+          <button id="again" class="btn reset_btn">Restart</button>
         </div>
       </section>
     </main>
