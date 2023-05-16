@@ -27,6 +27,7 @@ body {
     flex-direction: column;
     gap: 1rem;
     min-height: 100vh;
+    padding: 10px;
     background-color: var(--bg-color);
 }
 
@@ -109,7 +110,7 @@ input:focus {
     border: none;
 }
 
-.container_footer {
+.container_reset {
     max-width: 400px;
 }
 
@@ -132,4 +133,26 @@ input:focus {
 #highScore {
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+.container_footer {
+    max-width: 400px;
+}
+
+.container_footer p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.container_footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+}
+
+.container_footer a:hover {
+    color: #fff;
+    text-decoration: underline;
 }

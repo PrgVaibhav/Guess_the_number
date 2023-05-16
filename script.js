@@ -16,7 +16,7 @@ var userInfo = prompt("What is your name?");
 let attemptsRemaining = 20;
 let highScore = 0;
 attempts.textContent = attemptsRemaining;
-
+score.textContent = highScore;
 // Adding audios
 const clickAudio = new Audio("/click.wav");
 const winAudio = new Audio("/win.wav");
