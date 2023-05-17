@@ -36,8 +36,8 @@ Welcome to the Number Guessing Game! This game is built using `HTML`, `CSS`, and
 
 If you'd like to contribute to the development of this game, feel free to fork this repository and make any changes you desire. You can then submit a pull request, and your changes will be reviewed.
 
-Credits
+## Credits
 
 This game was created by [Vaibhav](https://kumarvaibhav.vercel.app/). You can find more of my projects on GitHub.
 
-Enjoy the game, and have fun guessing the numbers!
+Enjoy the game, and have fun guessing the numbers! 😁
